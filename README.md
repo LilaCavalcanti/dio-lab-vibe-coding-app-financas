@@ -1,58 +1,125 @@
 # 💸 App de Organização de Finanças Pessoais com Vibe Coding
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+O objetivo deste projeto foi criar um **App de Organização de Finanças Pessoais** com o apoio da IA através de ferramentas como o **Copilot** e o **Lovable**. A ideia era utilizar uma comunicação simples e natural através de **Vibe Coding**, de modo que eu pudesse guiar a IA descrevendo minhas ideias de forma simples, clara e objetiva.
 
-## ✨ O que é Vibe Coding
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+## Problema
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+Muitas pessoas não conseguem manter um **controle financeiro via aplicativo** porque são exigidas muitas entradas de dados de forma manual, de modo que esse trabalho organização é visto como **tedioso** e até memso **difícil**. 
 
-## 🎯 Desafio
+Sendo assim, quero criar uma solução que permita controlar as finanças por meio de uma **conversa simples com agentes de IA**, semelhante a mensagens de WhatsApp, por exemplo. Ou seja, você conta como tem gastado seu dinheiro no dia-a-dia para o seu **agente de IA** através de um chat e ele **organiza as informações pra você**!
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+## Etapas do Desafio
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+### 1. Criar o Prompt
 
-## 🪄 Etapas do Desafio
+Criei um **PRD (Product Requirements Document)** inicial simplificado, e utilizei o **Copilot** para **refinar** este requerimento. 
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
-
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
-
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+O PRD é uma especificação que serve como **_briefing_** para a IA entender a ideia do produto, contendo os **principais pontos** como um contexto, a descrição do problema, o público-alvo, as principais funcionalidades desejadas e o entregável que espero obter da IA.
 
 ```txt
+
 # Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
+Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário, utilizando linguagem natural em português.
 A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
 
 # Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização. Além disso, em muitos casos as interfaces não são intuitivas, causando dúvidas em iniciantes.
+Quero resolver isso com uma experiência de conversa, recomendações automáticas de economia personalizadas, telas e botões intuitivos, e gráficos que consigam sintetizar de forma simples a análise financeira apresentada.
 
 # Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+Pessoas ou famílias que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
 
 # Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+
+1. Tela de cadastro e login segura
+
+- Acesso mediante e-mail ou telefone (DDD + número).
+- Senha forte com pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e um caractere especial.
+- Dois tipos de perfil de acesso possíveis: usuário único ou grupo (família).
+
+2. Registro de transações financeiras via chat
+
+- Entrada dos dados em linguagem natural.
+- Data automática no formato dd/mm/aaaa.
+- Valor monetário em reais (BRL) acompanhado do símbolo padrão R$.
+- Histórico completo das conversas.
+- Possibilidade de edição, exclusão ou confirmação do registro informado.
+
+3. Classificação das transações financeiras
+
+- Opção de editar, incluir e excluir categorias.
+- Opção de personalizar as cores das categorias (ex.: verde para receita, vermelho para despesa fixa, amarelo para despesa variável, azul para investimentos).
+- Categoria de Receita: ex.: salário, aposentadoria, mesada, bônus, transferências bancárias recebidas de terceiros (Pix, TED, dentre outros), rendimento de investimentos, recebimento de aluguéis.
+- Categoria de Despesa Fixa: ex.: aluguel, condomínio, plano de saúde, prestação de financiamento, conta de energia, conta de água, conta de internet, conta de gás, taxas do imóvel (IPTU, bombeiros, dentre outros), educação (escola, faculdade, curso, mestrado, dentre outros), doações.
+- Categoria de Despesa Variável: ex.: cartão de crédito, compras pela internet (ex.: Amazon, Mercado Pago, Magalu, Shein, Shopee, AliExpress, dentre outros), restaurante, supermercado, padaria, gasolina, estacionamento, roupas e calçados, consertos e manutenções, procedimentos estéticos (ex.: salão de beleza, manicure, depilação, plásticas, botox, dentre outros), lazer (cinema, show, praia, dentre outros).
+- Categoria de Investimento: ex.: aplicação no Tesouro Direto, CDB, Ações, Fundos Imobiliários, ETFs, Criptomoedas, Poupança.
+
+4. Gestão familiar
+
+- Funcionalidade válida apenas para o perfil de acesso de grupo (família).
+- Mais de um avatar pode ser criado (um para cada pessoa da família).
+- Para o perfil de acesso em grupo (família), a classificação das transações financeiras deve conter a identificação do avatar responsável pela transação.
+
+5. Metas financeiras
+
+- Opção de criar, editar e excluir metas.
+- Opção de personalizar metas por cores.
+- As metas devem ter obrigatoriamente um nome (ex.: "Comprar apartamento"), uma data-alvo no formato dd/mm/aaaa (ex.: 01/12/2028) e um valor-alvo acompanhado do R$ (ex.: "R$ 100.000,00").
+- Relatórios mensais e anuais.
+
+6. Agente Financeiro (IA)
+
+- Recomendações educativas e acessíveis.
+- Atualização diária, de forma resumida e pontual, sobre os principais índices da economia (ex.: IPCA, SELIC, valor do Dólar e do Euro).
+
+7. Relatórios Simples e Familiares
+
+- Para o perfil de acesso em grupo (família), a exibição dos resultados pode ser segmentada por usuário (avatar) ou consolidada para o grupo.
+- Possibilidade de edição do formato de exibição dos gráficos em forma de pizza ou barra.
+- Gráficos básicos, com 4 cores principais:
+
+> Verde → Receitas
+> Vermelho → Despesas fixas
+> Amarelo → Despesas variáveis
+> Azul → Investimentos
+
 
 # Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
+
+Plano de MVP (Produto Mínimo Viável), considerando:
+
+1. Principais Telas
+
+- Tela de Perfil: informações de cadastro e login do usuário (nome, e-mail ou telefone, senha, avatar). Habilitar possibilidade de edição dos dados sensíveis (e-mail, telefone e senha) mediante entrada da senha de acesso do app.
+- Tela de Configurações: preferências de layout do app, cores e acessibilidade.
+- Tela de Conversa: registro das transações financeiras via chat.
+- Tela de Categorias: lista das categorias de transações financeiras já em uso, possibilitando a edição e criação de novas categorias.
+- Tela de Metas: exibição gráfica das metas estabelecidas com o nome da meta, a data-alvo, o valor-alvo e o valor parcial arrecadado (exibir tanto o valor monetário parcial arrecadado quanto a representação percentual em relação ao valor-alvo). Possibilidade de edição das metas e criação de novas.
+- Tela de Relatórios: visão gráfica consolidada com as 4 cores utilizadas para receitas, despesas fixas, despesas variáveis e investimentos.
+
+2. Validação Inicial
+
+- Teste com usuários de perfis diversos (iniciante, avançado, pessoas com necessidades de acessibilidade).
+- Teste com grupo (família) de 3 a 5 membros.
+- Métricas:
+* Feedback sobre: clareza do design, acessibilidade, utilidade do app, facilidade de uso e exibição dos dados. Considerar notas em escala de 1 a 10, em que 1 é péssimo e 10 é ótimo.
+* Percentual de transações corretamente vinculadas às categorias.
+
+3. Recursos e características principais do app
+
+- Design Universal.
+- NLP (Processamento de Linguagem Natural).
+- Flexibilidade no Uso: suporte a texto e voz.
+- Interface Intuitiva: linguagem simples e ícones familiares.
+- Informação Perceptível: contraste adequado, gráficos coloridos e textos alternativos para leitores de tela.
+- Tolerância ao Erro: fácil edição de transações e categorias.
+- Baixo Esforço Físico: poucos cliques para acessar relatórios.
+- Ar Familiar: design acolhedor, com cores suaves e elementos visuais que remetem à vida doméstica.
+- Tom educativo: linguagem acessível, sem jargões financeiros.
+
 ```
-
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
-
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
 
 ### 2. Explorando o Lovable na Prática
 
