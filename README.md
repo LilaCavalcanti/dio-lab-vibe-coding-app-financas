@@ -165,6 +165,41 @@ Realizei as seguintes interações com o Lovable:
 
 ### 3. Principais funcionalidades do Cont.AI
 
+**1. Login/cadastro seguro**
+
+- Possibilidade de criação de conta através de email e senha forte (8 caracteres, com maiúsculas, minúsculas, números e caractere especial)
+- Possibilidade de dois tipos de perfis diferentes: 
+  - Perfil de usuário individual
+  - Perfil de grupo (família)
+
+**2. Chat inteligente**
+
+- Chat integrado com IA para classificação automática de transações, bem como criação e atualização de metas financeiras através de linguagem natural
+
+**3. Extrato financeiro**
+
+- Exibição individual dos lançamentos financeiros, apresentando data, descrição, categoria do lançamento, membro responsável pelo lançamento (funcionalidade exclusiva do perfil de grupo) e valor lançado. 
+- Exibição dos valores consolidados de entradas, saídas, investimento e saldo final
+- Possibilidade de filtro de transações registradas por período mensal, trimestral ou período customizado
+
+**4. Categorização de transações financeiras**
+
+- Criação de tipos de categoria macro, ex: receita, investimento, despesa fixa e despesa variável
+- Criação de subcategorias, ex: salário (atribuído ao tipo "receita"), aluguel (atribuído ao tipo "despesa fixa)
+- Possibilidade de edição/exclusão dos tipos de categoria e seus subtipos
+
+**5. Metas financeiras**
+
+- Criação, edição e exclusão de metas financeiras personalizadas
+- Exibição visual do percentual já arrecadado para cada meta 
+
+**6. Exibição de relatório**
+
+- Exibição consolidada em gráficos de visualização amigável (pizza ou barra) das transações financeiras
+- Possibilidade de filtro por período mensal, trimestral ou período customizado
+- Exibição dos valores consolidados de receitas, despesas, investimentos e saldo final
+
+
 ### 4. Resultado obtido
 
 Acesso ao app: https://contai-finapp.lovable.app
