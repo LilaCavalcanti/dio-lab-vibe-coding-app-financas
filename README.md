@@ -1,4 +1,4 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 Cont.AI - Seu novo App de Organização Financeira com Vibe Coding
 
 O objetivo deste projeto foi criar um **App de Organização de Finanças Pessoais** com o apoio da IA através de ferramentas como o **Copilot** e o **Lovable**. A ideia era utilizar uma comunicação simples e natural através de **Vibe Coding**, de modo que eu pudesse guiar a IA descrevendo minhas ideias de forma simples, clara e objetiva.
 
@@ -80,10 +80,10 @@ Pessoas ou famílias que querem começar a organizar suas finanças de forma pr�
 - Possibilidade de edição do formato de exibição dos gráficos em forma de pizza ou barra.
 - Gráficos básicos, com 4 cores principais:
 
-> Verde → Receitas
-> Vermelho → Despesas fixas
-> Amarelo → Despesas variáveis
-> Azul → Investimentos
+  > Verde → Receitas
+  > Vermelho → Despesas fixas
+  > Amarelo → Despesas variáveis
+  > Azul → Investimentos
 
 
 # Entregável da IA
@@ -104,8 +104,8 @@ Plano de MVP (Produto Mínimo Viável), considerando:
 - Teste com usuários de perfis diversos (iniciante, avançado, pessoas com necessidades de acessibilidade).
 - Teste com grupo (família) de 3 a 5 membros.
 - Métricas:
-* Feedback sobre: clareza do design, acessibilidade, utilidade do app, facilidade de uso e exibição dos dados. Considerar notas em escala de 1 a 10, em que 1 é péssimo e 10 é ótimo.
-* Percentual de transações corretamente vinculadas às categorias.
+  > Feedback sobre: clareza do design, acessibilidade, utilidade do app, facilidade de uso e exibição dos dados. Considerar notas em escala de 1 a 10, em que 1 é péssimo e 10 é ótimo.
+  > Percentual de transações corretamente vinculadas às categorias.
 
 3. Recursos e características principais do app
 
@@ -121,21 +121,58 @@ Plano de MVP (Produto Mínimo Viável), considerando:
 
 ```
 
-### 2. Explorando o Lovable na Prática
+### 2. Construir com o Lovable
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+Realizei as seguintes interações com o Lovable:
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+> Crie um app de finanças pessoais com base no PRD (Product Requirements Document).
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+> Ative o chat inteligente com IA para classificar transações automaticamente quando o usuário digitar no chat.
+
+> Criar uma nova tela de "Extrato" para armazenar as informações das transações financeiras informadas no chat inteligente. O extrato deve permitir a exibição mensal, trimestral ou por período definido pelo usuário sendo o intervalo máximo de 90 dias. Considere a classificação inteligente das transações financeiras pra identificar corretamente o que é receita (entrada de valor) e o que é despesa (saída de valor).
+
+> Adicionar funcionalidade de editar transações no chat inteligente antes de efetivamente registrar a transação. Apenas após o ok do usuário a transação deve ser devidamente registrada. Além disso, integre o chat inteligente com a funcionalidade de metas, de forma que seja possível criar ou alimentar valores de uma meta através de comandos simples no chat.
+
+> Alterar cor do ícone e da fonte do valor do saldo nas abas "relatorio" e "extrato" para preto. Além disso, na aba "relatório",  subtrair o valor do investimento do montante do saldo, assim como é feito na aba de extrato.
+> 
+> Por exemplo: se na aba "relatórios" o saldo é de 3000 reais e é registrado um investimento no valor de 500, o saldo deve apresentar o valor de 2500.
+
+> Para o perfil de acesso em grupo (família), a classificação das transações financeiras deve conter a identificação do avatar responsável pela transação. Na aba "extrato" deve ser incluída uma nova coluna "Membro" para identificar o membro da família que realizou a transação informada no chat.
+>
+> Por exemplo: se no chat inteligente for inserida a frase "supermercado 50 mae", na aba de extrato o registro de 50 reais gastos na categoria supermercado deve ser atribuído ao membro "Mãe", conforme identificação do avatar.
+
+> Ajuste o chat inteligente para que ele seja capaz de processar mais de uma ação através de uma única frase de comando. Por exemplo, se eu escrever no chat "adicione 200 na meta de viagem e lance esse valor como uma despesa de lazer no balanço do mês", duas ações devem acontecer:
+> 1. A meta "Viagem de férias" deve ter o seu valor arrecadado ajustado com o acréscimo de 200 reais
+> 2. O valor de 200 reais deve ser lançado como uma transação financeira de acordo com sua classificação automática (nesse caso, categoria "Lazer" do tipo "Despesa Variável")
+
+> Possibilitar a edição dos tipos de categoria existentes na aba "Categorias". Isto é, ajuste os tipos de categoria para que seja possível criar nova categoria, editar ou excluir as categorias já existentes de cada tipo de categoria.
+>
+> Além disso, estabeleça cores fixas para cada categoria segundo as informações abaixo. Essas cores devem ser aplicadas tanto para as novas categorias a serem criadas quanto para as que já existem.
+> 
+> - Despesa fixa: #DC2626
+> - Despesa variável: #FACC15
+> - Receita: #16A34A
+> - Investimento: #2563EB
+
+> Na aba "Categorias", não está sendo possível excluir as categorias criadas nos tipos de categoria. Sendo assim, ajuste o processo para que seja possível editar os tipos de categoria existentes. Isto é, reordenar as categorias já existentes para cada tipo, criar nova categoria, editar as categorias, ou excluir as categorias já existentes de cada tipo de categoria.
+
+> Para o perfil de acesso em grupo (família), na aba "Extrato", mantenha a identificação do avatar responsável pela transação financeira apenas na coluna "Membro". Não é necessário repetir essa informação entre parêntesis na descrição da transação como está sendo feito agora.
+>
+> Por exemplo: se for inserida a frase "salário 3000 pai" no chat inteligente, ao gravar essa informação na aba Extrato, a descrição da transação deve ficar apenas "Recebimento de salário" ao invés de "Recebimento de salário (Pai)" como está ficando atualmente.
+
+> Mude o nome do app de "FinançasFácil" para "Cont.AI" e altere a logo do app de "F" para "C".
+
+
+### 3. Principais funcionalidades do Cont.AI
+
+### 4. Resultado obtido
+
+Acesso ao app: https://contai-finapp.lovable.app
+
 
 ### 3. Entregando o Desafio na DIO
+
+
 
 Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
 No README do seu repositório, inclua:
