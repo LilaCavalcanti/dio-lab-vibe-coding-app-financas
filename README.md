@@ -202,27 +202,79 @@ Realizei as seguintes interações com o Lovable:
 
 ### 4. Resultado obtido
 
-Acesso ao app: https://contai-finapp.lovable.app
+Acesso ao app: https://contai-finapp.lovable.app<br/>
 
+**1. Tela de login/cadastro**<br/><br/>
+
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/7a7c89b2-3c1b-4aea-ba3b-4c534af593b2" /><br/><br/>
+
+**2. Tela de Perfil**<br/><br/>
+
+- Adicionando membros da família (perfil de grupo)<br/>
+  
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/d207b56f-c599-4b84-8f5b-b88fd70cab64" /><br/>
+
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/065619d0-c379-4111-9378-e800e8157777" /><br/><br/>
+
+
+**3. Tela de Chat**<br/><br/>
+
+- Transação financeira - Visão PC<br/>
+
+<img width="937" height="420" alt="image" src="https://github.com/user-attachments/assets/6548a775-4206-4aa6-b3ac-ea301428befb" /><br/><br/>
+
+
+- Transação financeira - Visão mobile<br/>
+
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/75edde78-a980-4de4-9c0e-0cd151797d51" /><br/>
+
+- Criação de meta - Visão PC<br/>
+
+<img width="937" height="420" alt="image" src="https://github.com/user-attachments/assets/1a773c98-c988-41e7-8c7a-a27ec0c322f7" /><br/>
+
+- Atualização de meta - Visão PC<br/>
+
+<img width="937" height="420" alt="image" src="https://github.com/user-attachments/assets/09a7a784-e1b7-4131-bb4d-d293c8fe698a" /><br/><br/>
+
+
+**4. Tela de Extrato**<br/><br/>
+
+- Visão PC<br/>
+
+<img width="937" height="420" alt="image" src="https://github.com/user-attachments/assets/fff412f2-f469-4f6a-919b-fc99bd75a500" /><br/><br/>
+
+**5. Tela de Categorias**<br/><br/>
+
+- Visão PC<br/>
+
+<img width="937" height="420" alt="image" src="https://github.com/user-attachments/assets/0cf82bab-08dc-4bb7-b455-83c030b13b71" /><br/><br/>
+
+**6. Tela de Metas**<br/><br/>
+
+- Visão mobile<br/>
+
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/141658b9-bf94-4b6f-b45e-c835b4eb7b85" /><br/><br/>
+
+**7. Tela de Relatório**<br/><br/>
+
+- Visão mobile<br/>
+
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/c0d01b04-c06a-48cf-80ac-43b68944d495" /><br/>
+
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/8cd05220-a640-47df-bbd7-86568235b8f9" /><br/><br/>
 
 ### 3. Entregando o Desafio na DIO
 
 
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
-
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
+  
 - Uma breve **reflexão sobre o processo**:
   - O que funcionou bem?  
   - O que não funcionou como o esperado?  
   - O que aprendeu sobre conversar com IAs?
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
 
-## 💬 Conclusão
+
+## Reflexões
 
 Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
