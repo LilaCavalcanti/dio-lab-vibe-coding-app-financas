@@ -5,9 +5,9 @@ O objetivo deste projeto foi criar um **App de Organização de Finanças Pessoa
 
 ## Problema
 
-Muitas pessoas não conseguem manter um **controle financeiro via aplicativo** porque são exigidas muitas entradas de dados de forma manual, de modo que esse trabalho organização é visto como **tedioso** e até memso **difícil**. 
+Muitas pessoas não conseguem manter um **controle financeiro via aplicativo** porque são exigidas muitas entradas de dados de forma manual, de modo que esse trabalho de organização é visto como **tedioso** e até memso **difícil**. 
 
-Sendo assim, quero criar uma solução que permita controlar as finanças por meio de uma **conversa simples com agentes de IA**, semelhante a mensagens de WhatsApp, por exemplo. Ou seja, você conta como tem gastado seu dinheiro no dia-a-dia para o seu **agente de IA** através de um chat e ele **organiza as informações pra você**!
+Sendo assim, quero criar uma solução que permita controlar as finanças por meio de uma **conversa simples com agentes de IA**, semelhante a mensagens de WhatsApp, por exemplo. Ou seja, você conta como tem gastado seu dinheiro no dia-a-dia para o seu **agente de IA** através de um chat e ele **organiza as finanças pra você**!
 
 
 ## Etapas do Desafio
@@ -17,6 +17,8 @@ Sendo assim, quero criar uma solução que permita controlar as finanças por me
 Criei um **PRD (Product Requirements Document)** inicial simplificado, e utilizei o **Copilot** para **refinar** este requerimento. 
 
 O PRD é uma especificação que serve como **_briefing_** para a IA entender a ideia do produto, contendo os **principais pontos** como um contexto, a descrição do problema, o público-alvo, as principais funcionalidades desejadas e o entregável que espero obter da IA.
+
+Segue abaixo o PRD final obtido com apoio do Copilot e que usarei como input para o **Lovable**:
 
 ```txt
 
@@ -33,7 +35,7 @@ Pessoas ou famílias que querem começar a organizar suas finanças de forma pr�
 
 # Funcionalidades-Chave
 
-1. Tela de cadastro e login segura
+1. Tela de cadastro e login seguro
 
 - Acesso mediante e-mail ou telefone (DDD + número).
 - Senha forte com pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e um caractere especial.
@@ -228,9 +230,9 @@ Acesso ao app: https://contai-finapp.lovable.app<br/>
 
 <img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/75edde78-a980-4de4-9c0e-0cd151797d51" /><br/>
 
-- Criação de meta - Visão PC<br/>
+- Criação de meta - Visão mobile<br/>
 
-<img width="937" height="420" alt="image" src="https://github.com/user-attachments/assets/1a773c98-c988-41e7-8c7a-a27ec0c322f7" /><br/>
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/9011fb3b-661c-4658-af3b-38462a8eaf57" /><br/>
 
 - Atualização de meta - Visão PC<br/>
 
@@ -253,7 +255,7 @@ Acesso ao app: https://contai-finapp.lovable.app<br/>
 
 - Visão mobile<br/>
 
-<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/141658b9-bf94-4b6f-b45e-c835b4eb7b85" /><br/><br/>
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/f7c24b9d-ecad-4992-a153-93311d5d69e3" /><br/><br/>
 
 **7. Tela de Relatório**<br/><br/>
 
@@ -261,20 +263,30 @@ Acesso ao app: https://contai-finapp.lovable.app<br/>
 
 <img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/c0d01b04-c06a-48cf-80ac-43b68944d495" /><br/>
 
-<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/8cd05220-a640-47df-bbd7-86568235b8f9" /><br/><br/>
+- Visão mobile - Gráfico pizza<br/>
 
-### 3. Entregando o Desafio na DIO
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/8cd05220-a640-47df-bbd7-86568235b8f9" /><br/>
 
+- Visão mobile - Gráfico barra<br/>
 
-
-  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
-
+<img width="227" height="401" alt="image" src="https://github.com/user-attachments/assets/a8cedb5b-a6c2-4e0f-81ae-2058701666c1" /><br/><br/>
 
 
 ## Reflexões
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+De uma maneira geral, me diverti bastante durante o processo de criação deste app. Foi uma **experiência bastante positiva** e a entrega final **superou minhas expectativas**, considerando que toda a construção foi toda feita através de **Vibe Coding e linguagem natural**! 
+
+É claro que a limitação de iterações diárias para uso gratuito do Lovable impactou bastante o avanço do processo, pois até para criar as funções mínimas básicas do app (como integrar o agente de IA ao chat) foi necessário aguardar a renovação dos créditos do site. 
+
+No entanto, para além desse ponto e considerando o que pude perceber como **dificuldade do processo** ou como algo que **não tenha saído como esperado**, eu destacaria:  
+
+- Apesar de explícito nas instruções do PRD, algumas funcionalidades de **edição** não foram construídas/consideradas logo de início (como, por exemplo, a possibilidade de editar a entrada financeira informada no chat), tendo sido necessário **prompt posterior para ajuste da função**. 
+
+- Da mesma forma, para alguns comandos (prompts) mais **longos**, em que eu solicitava mais de um ponto de ajuste, na maioria das vezes o ajuste acontecia apenas **parcialmente**, então era necessária uma **segunda interação para complementar o pedido**.
+
+
+Já com relação aos aprendizados, eu destacaria:
+
+- Passar **exemplos do output** esperado auxiliaram a IA a entender e ajustar o pedido de forma mais **assertiva**, especialmente em se tratando de **operações matemáticas**, como fiz para o ajuste do campo "saldo".
+
+- Obtive **resultados melhores** nas interações em que busquei realizar **ajustes menores e mais direcionados**, ao invés daqueles em que apliquei prompts mais abrangentes ou para mais de um ajuste simultâneo.
